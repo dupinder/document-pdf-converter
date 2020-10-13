@@ -14,7 +14,14 @@ This service will help you in document conversions, For Example Word to PDF (Wor
 
 * Libre Office Installed on your local Machine [Link](https://www.libreoffice.org/download/download/). Make sure you download version 6.4.6, because this is the only supported version 😁
 
-> ### Run and Debug
+## Docker Build and Run 
+
+`docker build --pull --rm -f "Dockerfile" -t documentconverter`
+### Run Docker Image
+`docker run -it -d -p 8080:8080 documentconverter`
+
+
+## OR Run locally
 
 * Build maven project and run jar file as `java -jar application.jar`
 
