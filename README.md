@@ -6,7 +6,7 @@
 
 This service will help you in document conversions, For Example Word to PDF (Word doc with merge fields)
 
-![alt text](/readme-res/pdf.png)
+![alt text](/readme-res/ezgif.com-gif-maker.gif)
 
 ## Local Development
 
