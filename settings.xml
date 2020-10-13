@@ -1,0 +1,9 @@
+<settings>
+    <servers>
+        <server>
+            <id>AzureRepo</id>
+            <username>AZURE_ARTIFACTS</username>
+            <password>${env.AZURE_ARTIFACTS_ENV_ACCESS_TOKEN}</password>
+        </server>
+    </servers>
+</settings>
