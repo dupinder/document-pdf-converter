@@ -11,6 +11,10 @@ RUN apt-get update \
 	&& apt-get -y install --no-install-recommends dos2unix libfontconfig1 \
 	&& rm -rf /var/lib/apt/lists/*
 
+RUN apt-get update && apt-get install -y wget
+RUN wget http://ftp.us.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.6_all.deb
+RUN apt-get install -y -f /ttf-mscorefonts-installer_3.6_all.deb
+
 # Make homedir
 RUN mkdir -p /app
 # Export APP_HOME
